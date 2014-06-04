@@ -1,5 +1,6 @@
 # Shared code to read and clear the data
-# Original data is not in this repo
+# Original data is not in this repo, it is from the class web site
+# at https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
 
 # Use data.table for speed
 library(data.table)
