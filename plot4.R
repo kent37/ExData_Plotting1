@@ -1,8 +1,9 @@
 # Create plot4
 
-# Read the data if it is not already loaded
+# Read the data if it is not already loaded; see ReadData.R for details
 if (!exists('data')) source('ReadData.R')
 
+# Initialize to put four plots in one and save as png
 png('plot4.png')
 par(mfrow=c(2,2))
 
@@ -21,4 +22,5 @@ legend('topright', lty=1,
 
 # Bottom right
 plot(data$DateTime, data$Global_reactive_power, type='l', xlab='datetime', ylab='Global_reactive_power')
+
 dev.off()
